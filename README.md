@@ -6,6 +6,10 @@ App.yaml based version bumper
 ```
 ./bump.py [-h] [-c] {major,minor,maintenance}
 
+positional arguments:
+  {major,minor,maintenance}
+                        Change significance
+
 optional arguments:     
   -h, --help            Show help message and exit
   -c, --commit          Commit version bump to local git repository
