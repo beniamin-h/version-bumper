@@ -4,11 +4,13 @@
 import yaml
 from collections import OrderedDict
 import argparse
+from subprocess import call
 
 
 def get_args():
 	parser = argparse.ArgumentParser(description='Bumps version number in app.yaml')
 	parser.add_argument('version_type', type=str, nargs=1, choices=['major', 'minor', 'maintenance'], help="Change significance")
+	parser.add_argument('-c', '--commit', dest='commit', action='store_true', help="Commit version bump to local git repository")
 	return parser.parse_args()
 
 
@@ -70,4 +72,7 @@ app_conf_dict['version'] = get_printable_version_numbers(version)
 save_app_yaml(app_conf_dict)
 print('Updated version: \t%s' % get_printable_version_numbers(version))
 
+if args.commit:
+	call(['git', 'commit', 'app.yaml', '-m', 'Version bump (%s)' % get_printable_version_numbers(version)])
+	print('Version bump committed.')
 
