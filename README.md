@@ -3,11 +3,13 @@ App.yaml based version bumper
 
 ### Usage:
 
-`./bump.py [-h] [-c] {major,minor,maintenance}`
+```
+./bump.py [-h] [-c] {major,minor,maintenance}
 
-`optional arguments:`     
-⋅⋅⋅ `-h, --help            Show help message and exit`     
-⋅⋅⋅ `-c, --commit          Commit version bump to local git repository`     
+optional arguments:     
+  -h, --help            Show help message and exit
+  -c, --commit          Commit version bump to local git repository
+```
 
 ### Requirements
 
