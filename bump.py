@@ -8,7 +8,7 @@ import argparse
 
 def get_args():
 	parser = argparse.ArgumentParser(description='Bumps version number in app.yaml')
-	parser.add_argument('version_type', type=str, nargs=1, choices=['major', 'minor', 'maintenance'])
+	parser.add_argument('version_type', type=str, nargs=1, choices=['major', 'minor', 'maintenance'], help="Change significance")
 	return parser.parse_args()
 
 
