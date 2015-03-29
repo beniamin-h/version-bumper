@@ -1,7 +1,7 @@
 # version-bumper
 App.yaml based version bumper
 
-### Usage:
+### Usage
 
 ```
 ./bump.py [-h] [-c] {major,minor,maintenance}
@@ -18,6 +18,7 @@ optional arguments:
 ### Requirements
 
 * Python3 (tested with Python3.4)
+* [pyyaml](https://pypi.python.org/pypi/PyYAML)	
 
 ### Key features
 
