@@ -17,14 +17,14 @@ to format x.y.z (major, minor, maintenance)
 * Sequences (lists) indenting
 * Works with any valid yaml file
 
-### Advanced use
+### Advanced usage
 
 For shorthand you can use your shell aliases, eg.:
 
-`cp bump.py /opt/bump.py` 
-`alias bump-major='/opt/bump.py major'`
-`alias bump-minor='/opt/bump.py minor'`
-`alias bump-maintenance='/opt/bump.py maintenance'`
+`cp bump.py /opt/bump.py`    
+`alias bump-major='/opt/bump.py major'`    
+`alias bump-minor='/opt/bump.py minor'`     
+`alias bump-maintenance='/opt/bump.py maintenance'`     
 
 In order to avoid to type it on every login it's recommended to put aliases into your .bashrc file.
 
