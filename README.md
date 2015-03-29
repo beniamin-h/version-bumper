@@ -3,7 +3,11 @@ App.yaml based version bumper
 
 ### Usage:
 
-`./bump.py [-h] {major,minor,maintenance}`
+`./bump.py [-h] [-c] {major,minor,maintenance}`
+
+optional arguments:
+  -h, --help            Show help message and exit
+  -c, --commit          Commit version bump to local git repository
 
 ### Requirements
 
@@ -13,6 +17,7 @@ App.yaml based version bumper
 
 * Changes any number-based version (eg. 12, 4.2, 5.081.3)    
 to format x.y.z (major, minor, maintenance)
+* Optionally commits version bump to local git repository
 * Preserves present config items order
 * Sequences (lists) indenting
 * Works with any valid yaml file
