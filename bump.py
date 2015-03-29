@@ -40,7 +40,7 @@ def save_app_yaml(app_conf_dict):
 
 
 def get_current_version_numbers(app_conf_dict):
-	ver_numbers = app_conf_dict.get('version', '').split('.')
+	ver_numbers = str(app_conf_dict.get('version', '0')).split('.')
 	ver_numbers.extend([0] * (3 - len(ver_numbers)))
 	return map(int, ver_numbers)
 
