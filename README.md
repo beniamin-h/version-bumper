@@ -37,5 +37,5 @@ For shorthand you can use your shell aliases, eg.:
 `alias bump-minor='/opt/bump.py minor'`     
 `alias bump-maintenance='/opt/bump.py maintenance'`     
 
-In order to avoid to type it on every login it's recommended to put aliases into your .bashrc file.
+In order to avoid to type this on every login it's recommended to put aliases into your shell runcom file (like ~/.bashrc, ~/.zshrc etc.).
 
