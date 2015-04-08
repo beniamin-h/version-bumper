@@ -1,5 +1,5 @@
 # version-bumper
-App.yaml based version bumper
+[App.yaml](https://cloud.google.com/appengine/docs/python/config/appconfig#Python_app_yaml_About_app_yaml) based version bumper
 
 ### Usage
 
